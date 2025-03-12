@@ -3,12 +3,12 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useRef } from "react";
 
-import IMG1 from "../../assets/medical-site.png";
-import IMG2 from "../../assets/reservation-form.png";
-import IMG3 from "../../assets/Startup Agency Project.jpg";
-import IMG4 from "../../assets/fh-huquq.png";
-import IMG5 from "../../assets/Jokes Project.jpg";
-import IMG6 from "../../assets/Project4.jpg";
+import IMG1 from "../../assets/img1.jpeg";
+import IMG2 from "../../assets/img2.jpeg";
+import IMG3 from "../../assets/img3.png";
+import IMG4 from "../../assets/img4.jpeg";
+import IMG5 from "../../assets/img5.png";
+import IMG6 from "../../assets/img6.jpeg";
 
 const Portfolio = () => {
   const ref = useRef(null);
@@ -17,57 +17,58 @@ const Portfolio = () => {
   const soloProjects = [
     {
       id: 1,
-      title: "Educational Website with React.js",
-      img: IMG1,
-      description: "An educational website is a huge interactive platform to present various information for people.",
-      technologies: "HTML | CSS | JavaScript | React.js",
-      link: "",
-      github: "",
+      title: "Train tickit booking",
+      img: IMG6,
+      description: "A modern and responsive train ticket booking UI built with React.js and Tailwind CSS for a smooth and intuitive booking experience.",
+      technologies: "HTML | Tailwind | JavaScript |React.js ",
+      link: "https://train-ticket-booking1.netlify.app/",
+      github: "https://github.com/abhaylodhi1/Train-ticket-booking",
     },
     {
       id: 2,
-      title: "fh-huquq.az",
-      img: IMG4,
-      description: "A personal website assembled for a lawyer. Firebase is the basis of the website assembled as a full stack.",
-      technologies: "HTML | CSS | JavaScript | Express.js | Firebase",
-      link: "",
-      github: "",
+      title: "Medical store",
+      img: IMG3,
+      description: "A responsive medical store website built with HTML, CSS, and JavaScript, featuring a modern UI with interactive product displays, a search bar, and an intuitive shopping experience.",
+      technologies: "HTML | CSS | JavaScript ",
+      link: "https://emedicine-site1.netlify.app/",
+      github: "https://github.com/abhaylodhi1/emedicine-site",
     },
+   
     {
       id: 3,
-      title: "Hospital reservation form",
-      img: IMG2,
-      description: "A booking website for doctor's appointments at the hospital. The website is mainly functionally developed with JavaScript.",
+      title: "Medicine buying site",
+      img: IMG5,
+      description: "An online medicine-buying website built using HTML, CSS, and JavaScript, featuring a shopping cart, secure payment confirmation, and a user-friendly interface for browsing and purchasing medicines.",
       technologies: "HTML | CSS | JavaScript",
-      link: "",
-      github: "",
+      link: "https://medical-site-javascript1.netlify.app/",
+      github: "https://github.com/abhaylodhi1/medicle_site_js",
     },
     {
       id: 4,
-      title: "Startup Landing Page",
-      img: IMG3,
-      description: "A dedicated, standalone web page built for specific campaigns and target audiences.",
-      technologies: "HTML | CSS | JavaScript | Next.js",
-      link: "",
-      github: "",
+      title: "Tic-tac-toe",
+      img: IMG2,
+      description: "A simple Tic-Tac-Toe game built using HTML, CSS, and JavaScript, where two players take turns marking X or O on a 3x3 grid to win.",
+      technologies: "HTML | CSS | JavaScript ",
+      link: "https://tictacto-game1.netlify.app/",
+      github: "https://github.com/abhaylodhi1/Tic-tac-toe-game",
     },
     {
       id: 5,
-      title: "Jokes Project with Typescript",
-      img: IMG5,
-      description: "For when you need a fast funny joke, here are some short jokes to get anyone giggling.",
-      technologies: "HTML | Styled-components | TypeScript",
-      link: "",
-      github: "",
+      title: "Brick-game",
+      img: IMG4,
+      description: "A classic brick breaker game built with HTML, CSS, and JavaScript, where players control a paddle to bounce a ball and break bricks.",
+      technologies: "HTML | CSS | JavaScript",
+      link: "https://brick-game1.netlify.app/",
+      github: "https://github.com/abhaylodhi1/Brick-game",
     },
     {
       id: 6,
-      title: "Fs Poster Website",
-      img: IMG6,
-      description: "Real-world group project which is still in progress and will provide an educational platform for future young developers.",
-      technologies: "HTML | SCSS | JavaScript",
-      link: "",
-      github: "",
+      title: "Dice game",
+      img: IMG1,
+      description: "A simple dice game built using HTML, CSS, and JavaScript, where players roll a virtual die to get random outcomes.",
+      technologies: "HTML | CSS | JavaScript",
+      link: "https://dice-game-javascript1.netlify.app/",
+      github: "https://github.com/abhaylodhi1/Dice-game",
     },
   ];
 

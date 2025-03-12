@@ -14,18 +14,12 @@ const Testimonials = () => {
   const testimonials = [
     {
       id: 1,
-      link: "https://www.linkedin.com/in/n%C9%99sib%C9%99li-yusibov-0x101/",
-      name: "Nəsibəli YUSIBOV",
-      role: "Cyber Security Engineer . Improving open-source projects, one commit at a time.",
-      test: "As a developer and a problem solver, I think Rasif is a great collaborative partner to have. I met Rasif in some basic javascript & react projects and since then he has drastically progressed in him understanding of the development process. He always has a professional environment and has good audio and video quality which makes it easier to communicate with him.",
+      link: "https://www.linkedin.com/in/sharthak-acharjee-6195b7112/",
+      name: "Sharthak Acharjee",
+      role: "SQL Developer. Optimizing databases and enhancing performance, one query at a time.",
+      test: "You are found to be hardworking, enthusiastic and diligent during your internship. We highly appreciate your accomplishments and wish you the best for the future.",
     },
-    {
-      id: 2,
-      link: "https://www.linkedin.com/in/raul-omarov-7841b7201/",
-      name: "Raul Omarov",
-      role: "Full-stack developer | Technical Support Engineer at Microverse",
-      test: "It was a pleasure collaborating with Rasif on different projects. One of the things that I think is special about him is that he never settles, even after completing the projects he finds other resources and strengthens him knowledge. Collaborating with him is easy and comfortable, it's like working with someone you've known for a long period of time.",
-    },
+    
   ];
 
   const slideInUp = {

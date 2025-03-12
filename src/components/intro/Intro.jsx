@@ -1,8 +1,8 @@
-import React from "react";
 import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import React from "react";
 import { FaAward } from "react-icons/fa";
 import { VscFolderLibrary } from "react-icons/vsc";
+import { useInView } from "react-intersection-observer";
 import img from "../../assets/Me.png";
 
 const Intro = () => {
@@ -62,18 +62,12 @@ const Intro = () => {
               >
                 <VscFolderLibrary className="text-blue-400 text-3xl mb-2" />
                 <h5 className="text-lg font-semibold">Projects</h5>
-                <small className="text-gray-400">10+ Completed Projects</small>
+                <small className="text-gray-400">7+ Completed Projects</small>
               </motion.article>
             </div>
 
             <p className="text-gray-300 mb-6">
-              6 months experienced Front-End Developer with hands-on experience in
-              identifying web-based user interactions along with designing and implementing
-              highly-responsive user interface components by deploying React concepts.
-              Proficient in translating designs and wireframes into high-quality code,
-              and writing application interface code via JavaScript and React.js workflows.
-              Adept at monitoring and maintaining frontend performance, troubleshooting, 
-              and debugging to bolster overall performance.
+            6 months experienced React.js Developer with hands-on experience in developing and optimizing web applications using React.js, Zustand, Axios, and DevExpress DataGrid. Skilled in building highly responsive UI components, implementing state management, and integrating APIs for seamless data handling. Proficient in translating designs into high-quality code and ensuring data integrity with Zod and Yup. Experienced in SQL development, database optimization, and performance tuning. Adept at monitoring frontend performance, debugging, and enhancing user experience through efficient UI/UX design.
             </p>
 
             <motion.a

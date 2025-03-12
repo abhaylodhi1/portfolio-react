@@ -30,7 +30,7 @@ const Experience = () => {
       >
         <h3 className="text-xl font-semibold text-blue-300 mb-4">Front-end Development</h3>
         <div className="grid md:grid-cols-2 gap-6 text-left">
-          {["HTML / CSS", "JavaScript", "SASS / SCSS", "Bootstrap, Tailwind", "React, Vite JS, Next.js", "TypeScript", "Firebase", "Node.js, Express.js", "Responsive Design, BEM Methodology", "Zustand, Context API"].map((skill, index) => (
+          {["React, Vite JS, Next.js","Bootstrap, Tailwind","JavaScript,TypeScript","HTML / CSS", "SQL, MySql , Oracle SQL", "Firebase", "Zod/Yup Validation, NextAuth.js", "Zustand, Context API, Axios-intercepter","React-hook-form, DevExtreme,DataGrid","Responsive Design","Git , GitHub","VsCode,Xampp"].map((skill, index) => (
             <motion.article
               key={index}
               className="flex items-center gap-3 bg-gray-700 p-4 rounded-lg border border-transparent hover:border-blue-400 transition-all"
