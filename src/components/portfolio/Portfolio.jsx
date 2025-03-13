@@ -21,8 +21,8 @@ const Portfolio = () => {
       img: IMG6,
       description: "A modern and responsive train ticket booking UI built with React.js and Tailwind CSS for a smooth and intuitive booking experience.",
       technologies: "HTML | Tailwind | JavaScript |React.js ",
-      link: "https://train-ticket-booking1.netlify.app/",
-      github: "https://github.com/abhaylodhi1/Train-ticket-booking",
+      link: "https://train-tickit-booking1.netlify.app/",
+      github: "https://github.com/abhaylodhi1/abhaylodhi1-Train-ticket-booking",
     },
     {
       id: 2,
