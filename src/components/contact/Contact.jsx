@@ -3,9 +3,10 @@ import { MdOutlineEmail } from "react-icons/md";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
-  const [message, setMessage] = useState(false);
   const formRef = useRef();
   const { ref, inView } = useInView({ threshold: 0.2, triggerOnce: false });
 
@@ -16,27 +17,56 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setMessage(true);
+
+    const formData = new FormData(formRef.current);
+    const user_name = formData.get("user_name");
+    const user_email = formData.get("user_email");
+    const user_message = formData.get("message");
+
     emailjs
-      .sendForm(
+      .send(
         "service_kez93ee",
         "template_u21v9vg",
-        formRef.current,
+        {
+          from_name: user_name,
+          email_id: user_email,
+          message: user_message,
+        },
         "fFp_TCrh4sdg93QXT"
       )
       .then(
         (result) => {
-          console.log(result.text);
+          console.log("Email sent successfully:", result.text);
+          toast.success(" Email sent successfully!", {
+            position: "top-center",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            theme: "dark",
+          });
         },
         (error) => {
-          console.log(error.text);
+          console.log("Error sending email:", error.text);
+          toast.error("Failed to send email. Try again!", {
+            position: "top-center",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            theme: "dark",
+          });
         }
       );
+
     e.target.reset();
   };
 
   return (
     <section id="contact" className="py-16 text-center bg-gray-900 text-white" ref={ref}>
+      <ToastContainer />
       <motion.div initial="hidden" animate={inView ? "visible" : "hidden"} variants={slideInLeft}>
         <h5 className="text-lg text-gray-400">Get In Touch</h5>
         <h5 className="text-gray-300 mb-6">
@@ -99,7 +129,6 @@ const Contact = () => {
           >
             Send Message
           </motion.button>
-          {message && <span className="text-sm text-green-400">Thanks, I'll reply ASAP :)</span>}
         </motion.form>
       </div>
     </section>
